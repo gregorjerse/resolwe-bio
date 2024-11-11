@@ -131,4 +131,7 @@ class VariantExperimentFilter(BaseResolweFilter):
             "contributor__id": NUMBER_LOOKUPS,
             "timestamp": DATETIME_LOOKUPS,
             "variant_data_source": TEXT_LOOKUPS,
+            "variant_calls": RELATED_LOOKUPS,
+            "variant_calls__sample": RELATED_LOOKUPS,
+            "variant_calls__sample__slug": TEXT_LOOKUPS,            
         }
